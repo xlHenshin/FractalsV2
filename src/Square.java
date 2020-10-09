@@ -26,15 +26,16 @@ public class Square extends Figure implements Rotable {
 	public void rotateSquare(int x, int y, float size, int count, int rot) {
 		
 		if(count%2==0) {
-		    rotate(PI/rot);
+		   
+			app.rotate(PI/rot);
 		     app.rect(x, y, size, size);
-			  rotate(PI/rot);
+			  app.rotate(PI/rot);
 			   }else {
 		    app.rect(x, y, size, size);
 		 }
 		     count=count+1; 
 		     
-		    if(size > 2) {
+		    if(size >= 1) {
 			 
 		    size *= 0.75f;
 		   

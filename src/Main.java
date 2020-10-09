@@ -17,8 +17,8 @@ public class Main extends PApplet {
 	
 	public void setup() {
 		option=0;
-		circle = new Circle(400, 400, mouseY, this);
-		square = new Square(0, 0,mouseY*5, this);
+		circle = new Circle(0, 0, mouseY, this);
+		square = new Square(0, 0, mouseY, this);
 	}
 	
 	public void draw() {
@@ -45,10 +45,10 @@ public class Main extends PApplet {
 			
 		case 1:
 			
-			//drawSquare(0, 0, mouseY*5, 1, (mouseY/40)+2);
-			square.drawFigure(0, 0, mouseY*5);
+			//drawSquare(0, 0, mouseY*5, 1, (mouseY/50)+2);
 			//square.drawFigure(0, 0, mouseY*5);
-			//square.rotateSquare(0, 0, mouseY*5, 0, mouseY/40);
+			//square.drawFigure(0, 0, mouseY*5);
+			square.rotateSquare(0, 0, mouseY*5, 0, (mouseY/40)+2);
 			
 			break;
 			
